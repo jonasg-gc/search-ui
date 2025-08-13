@@ -40,7 +40,7 @@ const defaults = {
 	"isAdvancedSearch": false,
 	"originLevel3": window.location.origin + winPath,
 	"pipeline": "",
-	"minimumSnippetScore": 0.95
+	"minimumSnippetScore": 0.7
 };
 let lang = document.querySelector( "html" )?.lang;
 let paramsOverride = baseElement ? JSON.parse( baseElement.dataset.gcSearch ) : {};
