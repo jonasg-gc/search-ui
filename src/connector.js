@@ -39,7 +39,7 @@ const defaults = {
 	"isContextSearch": false,
 	"isAdvancedSearch": false,
 	"originLevel3": window.location.origin + winPath,
-	"pipeline": "",
+	"Pipeline": "",
 	"minimumSnippetScore": 0.7
 };
 let lang = document.querySelector( "html" )?.lang;
@@ -521,7 +521,7 @@ function initEngine() {
 			search: {
 				locale: params.lang,
 				searchHub: params.searchHub,
-				pipeline: params.pipeline,
+				Pipeline: params.Pipeline,
 				preprocessSearchResponseMiddleware: (response) => {
 					searchResult = response.body;
 					return response;
